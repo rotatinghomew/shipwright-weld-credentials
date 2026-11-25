@@ -1,0 +1,256 @@
+{
+  "workers": [
+    {
+      "id": "W17",
+      "factory": "F-A",
+      "cohort": "G1"
+    },
+    {
+      "id": "W18",
+      "factory": "F-B",
+      "cohort": "G1"
+    },
+    {
+      "id": "W30",
+      "factory": "F-A",
+      "cohort": "G2"
+    }
+  ],
+  "policy": [
+    {
+      "id": "P1",
+      "trade": "ship_plate",
+      "required_minutes": 90,
+      "pass_score": 75,
+      "required_jobs": [
+        "seam"
+      ]
+    },
+    {
+      "id": "P2",
+      "trade": "ship_pipe",
+      "required_minutes": 60,
+      "pass_score": 80,
+      "required_jobs": [
+        "pipe"
+      ]
+    }
+  ],
+  "mentors": [
+    {
+      "id": "M1",
+      "factory": "F-A",
+      "trade": "ship_plate",
+      "team": "A7",
+      "from_time": "08:00",
+      "to_time": "12:00"
+    },
+    {
+      "id": "M2",
+      "factory": "F-B",
+      "trade": "ship_plate",
+      "team": "B2",
+      "from_time": "09:30",
+      "to_time": "14:00"
+    },
+    {
+      "id": "M3",
+      "factory": "F-A",
+      "trade": "ship_pipe",
+      "team": "A7",
+      "from_time": "08:00",
+      "to_time": "12:00"
+    }
+  ],
+  "logs": [
+    {
+      "id": "L4",
+      "factory": "F-A",
+      "worker": "W17",
+      "mentor": "M1",
+      "trade": "ship_plate",
+      "team": "A7",
+      "start": "08:00",
+      "end": "09:30",
+      "signed_at": "09:31"
+    },
+    {
+      "id": "L5",
+      "factory": "F-B",
+      "worker": "W17",
+      "mentor": "M2",
+      "trade": "ship_plate",
+      "team": "B2",
+      "start": "09:15",
+      "end": "10:30",
+      "signed_at": "10:35"
+    },
+    {
+      "id": "L6",
+      "factory": "F-A",
+      "worker": "W17",
+      "mentor": "M3",
+      "trade": "ship_pipe",
+      "team": "A7",
+      "start": "08:15",
+      "end": "09:15",
+      "signed_at": "09:17"
+    },
+    {
+      "id": "L7",
+      "factory": "F-A",
+      "worker": "W18",
+      "mentor": "M1",
+      "trade": "ship_plate",
+      "team": "A7",
+      "start": "08:00",
+      "end": "10:00",
+      "signed_at": "10:02"
+    },
+    {
+      "id": "L8",
+      "factory": "F-B",
+      "worker": "W17",
+      "mentor": "M2",
+      "trade": "ship_plate",
+      "team": "B2",
+      "start": "10:30",
+      "end": "11:00",
+      "signed_at": "11:03"
+    }
+  ],
+  "corrections": [
+    {
+      "id": "C4",
+      "target": "L4",
+      "factory": "F-A",
+      "action": "void",
+      "arrived_at": "15:20"
+    },
+    {
+      "id": "C5",
+      "target": "L5",
+      "factory": "F-B",
+      "action": "void",
+      "arrived_at": "16:00"
+    }
+  ],
+  "seats": [
+    {
+      "id": "E91",
+      "centre": "C-W",
+      "trade": "ship_plate",
+      "capacity": 1,
+      "confirm_by": "11:00",
+      "begins": "11:20"
+    },
+    {
+      "id": "E92",
+      "centre": "C-E",
+      "trade": "ship_plate",
+      "capacity": 1,
+      "confirm_by": "12:00",
+      "begins": "12:30"
+    },
+    {
+      "id": "E93",
+      "centre": "C-W",
+      "trade": "ship_pipe",
+      "capacity": 2,
+      "confirm_by": "10:50",
+      "begins": "11:10"
+    }
+  ],
+  "registrations": [
+    {
+      "id": "R1",
+      "worker": "W17",
+      "seat": "E91",
+      "occurred": "10:42",
+      "action": "hold"
+    },
+    {
+      "id": "R2",
+      "worker": "W18",
+      "seat": "E91",
+      "occurred": "10:44",
+      "action": "hold"
+    },
+    {
+      "id": "R3",
+      "worker": "W17",
+      "seat": "E91",
+      "occurred": "10:50",
+      "action": "move"
+    },
+    {
+      "id": "R4",
+      "worker": "W17",
+      "seat": "E92",
+      "occurred": "10:55",
+      "action": "confirm"
+    },
+    {
+      "id": "R5",
+      "worker": "W17",
+      "seat": "E93",
+      "occurred": "10:22",
+      "action": "confirm"
+    }
+  ],
+  "results": [
+    {
+      "id": "X1",
+      "seat": "E91",
+      "registration": "R1",
+      "checked_in": false,
+      "score": 83,
+      "received": "13:20"
+    },
+    {
+      "id": "X2",
+      "seat": "E92",
+      "registration": "R4",
+      "checked_in": true,
+      "score": 91,
+      "received": "13:10"
+    },
+    {
+      "id": "X3",
+      "seat": "E93",
+      "registration": "R5",
+      "checked_in": true,
+      "score": 87,
+      "received": "12:20"
+    }
+  ],
+  "orders": [
+    {
+      "id": "O11",
+      "team": "A7",
+      "trade": "ship_plate",
+      "kind": "seam",
+      "planned_start": "14:20",
+      "actual_start": "14:35",
+      "mentor": null
+    },
+    {
+      "id": "O12",
+      "team": "A7",
+      "trade": "ship_pipe",
+      "kind": "pipe",
+      "planned_start": "14:40",
+      "actual_start": "14:45",
+      "mentor": "M3"
+    },
+    {
+      "id": "O13",
+      "team": "B2",
+      "trade": "ship_plate",
+      "kind": "seam",
+      "planned_start": "16:10",
+      "actual_start": null,
+      "mentor": null
+    }
+  ]
+}
