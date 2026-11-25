@@ -43,15 +43,17 @@
       "trade": "ship_plate",
       "team": "A7",
       "from_time": "08:00",
-      "to_time": "12:00"
+      "to_time": "12:00",
+      "cohort": "G1"
     },
     {
       "id": "M2",
       "factory": "F-B",
       "trade": "ship_plate",
       "team": "B2",
-      "from_time": "09:30",
-      "to_time": "14:00"
+      "from_time": "09:15",
+      "to_time": "14:00",
+      "cohort": "G1"
     },
     {
       "id": "M3",
@@ -59,7 +61,8 @@
       "trade": "ship_pipe",
       "team": "A7",
       "from_time": "08:00",
-      "to_time": "12:00"
+      "to_time": "12:00",
+      "cohort": "G1"
     }
   ],
   "logs": [
