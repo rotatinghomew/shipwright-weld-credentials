@@ -61,7 +61,7 @@
       "trade": "ship_pipe",
       "team": "A7",
       "from_time": "08:00",
-      "to_time": "12:00",
+      "to_time": "17:30",
       "cohort": "G1"
     }
   ],
@@ -95,9 +95,9 @@
       "mentor": "M3",
       "trade": "ship_pipe",
       "team": "A7",
-      "start": "08:15",
-      "end": "09:15",
-      "signed_at": "09:17"
+      "start": "11:05",
+      "end": "12:05",
+      "signed_at": "12:07"
     },
     {
       "id": "L7",
@@ -160,8 +160,8 @@
       "centre": "C-W",
       "trade": "ship_pipe",
       "capacity": 2,
-      "confirm_by": "10:50",
-      "begins": "11:10"
+      "confirm_by": "12:15",
+      "begins": "12:30"
     }
   ],
   "registrations": [
@@ -197,7 +197,7 @@
       "id": "R5",
       "worker": "W17",
       "seat": "E93",
-      "occurred": "10:22",
+      "occurred": "12:10",
       "action": "confirm"
     }
   ],
@@ -224,7 +224,7 @@
       "registration": "R5",
       "checked_in": true,
       "score": 87,
-      "received": "12:20"
+      "received": "14:15"
     }
   ],
   "orders": [
@@ -235,7 +235,8 @@
       "kind": "seam",
       "planned_start": "14:20",
       "actual_start": "14:35",
-      "mentor": null
+      "mentor": null,
+      "worker": "W17"
     },
     {
       "id": "O12",
@@ -244,7 +245,8 @@
       "kind": "pipe",
       "planned_start": "14:40",
       "actual_start": "14:45",
-      "mentor": "M3"
+      "mentor": "M3",
+      "worker": "W17"
     },
     {
       "id": "O13",
@@ -253,7 +255,8 @@
       "kind": "seam",
       "planned_start": "16:10",
       "actual_start": null,
-      "mentor": null
+      "mentor": null,
+      "worker": "W17"
     }
   ]
 }
